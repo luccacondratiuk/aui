@@ -46,14 +46,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   FIRMWARE="n"           # Install custom firmwares
   NFS="n"
   READAHEAD="n"
-  SAMBA="n"
-  SSH="n"
+  SAMBA="y"
+  SSH="y"
   TLP="n"                # Laptop Power Manager
   ZRAM="n"
-  ZSH="n"
-  OH_MY_ZSH="n"
+  ZSH="y"
+  OH_MY_ZSH="y"
   BETTER_VIDEO_DRIVER="y" # NVIDIA/AMDGPU
-  BUMBLEBEE="y" # Optimus, use Bumblebee instead of NVIDIA PRIME Render Offload
+  BUMBLEBEE="n" # Optimus, use Bumblebee instead of NVIDIA PRIME Render Offload
   FONTCONFIG="y"
   #}}}
   #ADDITIONAL FIRMWARE {{{
@@ -90,7 +90,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 14) i3-Gaps
   # 15) OpenBox
   # 16) Xmonad
-  DESKTOPENV="4"
+  DESKTOPENV="5"
   #KDE {{{
     # 1) Choqok
     # 2) Digikam
@@ -99,7 +99,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 5) latte-dock
     # 6) Skrooge
     # 7) Yakuake
-    KDE_OPTIONS="1 2 3 6 7"
+    KDE_OPTIONS="4 5"
   #}}}
   #ESSENTIAL APPS [Enlightenment,LXDE,Awesome,Fluxbox,OpenBox] {{{
     #  1) Display Manager
@@ -125,7 +125,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 5) Slim
     # 6) lxdm
     # 7) lxdm-gtk
-    DISPLAY_MANAGER="3"
+    DISPLAY_MANAGER="4"
   #}}}
   # 1) Icons Themes
   # 2) GTK2|GTK3 Themes
@@ -141,7 +141,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #  8) Pop
     #  9) Solus
     # 10) Yaru
-    ICONS_THEMES="7"
+    ICONS_THEMES="5"
   #}}}
   #GTK THEMES {{{
     #  1) Arc
@@ -154,7 +154,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #  8) Flat-Remix
     #  9) Zuki
     # 10) Zukitwo
-    GTK_THEMES="1"
+    GTK_THEMES=""
   #}}}
 #}}}
 #NETWORK MANAGER {{{
@@ -179,7 +179,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 10) Terminator
   # 11) Tilix
   # 12) Bitwarden
-  ACCESSORIES_OPTIONS="4 11"
+  ACCESSORIES_OPTIONS="12"
 #}}}
 #DEVELOPEMENT {{{
   #  1) Atom
@@ -213,7 +213,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 29) Dart-SDK-dev
   # 30) Flutter
   # 31) Flutter-dev
-  DEVELOPMENT_OPTIONS="18"
+  DEVELOPMENT_OPTIONS="8 18 21 26 29 31"
 #}}}
 #OFFICE {{{
   #  1) Abiword+Gnumeric|Calligra
@@ -228,7 +228,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 10) Typora
   # 11) Xmind
   # 12) OnlyOffice
-  OFFICE_OPTIONS="6"
+  OFFICE_OPTIONS="6 12"
 #}}}
 #SYSTEM TOOLS {{{
   #  1) ClamAV
@@ -249,7 +249,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 16) netdata
   # 17) nload
   # 18) vmware-workstation 12
-  SYSTEMTOOLS_OPTIONS="12 14"
+  SYSTEMTOOLS_OPTIONS="6 15"
 #}}}
 #GRAPHICS {{{
   #  1) Blender
@@ -264,7 +264,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 10) Shotwell
   # 11) Simple Scan
   # 12) YACReader
-  GRAPHICS_OPTIONS="2 3 4 6 10"
+  GRAPHICS_OPTIONS="1 2 4"
 #}}}
 #INTERNET {{{
   # 1) Browser
@@ -284,7 +284,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 7) Tor-browser
     # 8) Brave
     # 9) Microsoft Edge Beta
-    BROWSERS_OPTIONS="3"
+    BROWSERS_OPTIONS="1 9"
   #}}}
   #DOWNLOAD|FILESHARE {{{
     #  1) Deluge
@@ -326,7 +326,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 12) Slack
     # 13) VK Messanger
     # 14) Zoom.us
-    IM_OPTIONS="5"
+    IM_OPTIONS="11"
   #}}}
   #MAPPING {{{
     # 1) Anydesk
@@ -344,7 +344,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 1) Players
   # 2) Editors|Tools
   # 3) Codecs
-  AUDIO_OPTIONS="1-3"
+  AUDIO_OPTIONS="10"
   #PLAYERS {{{
     #  1) Amarok
     #  2) Audacious
@@ -365,7 +365,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 2) Easytag
     # 3) OcenAudio
     # 4) Soundconverter|Soundkonverter
-    AUDIO_EDITOR_OPTIONS="2"
+    AUDIO_EDITOR_OPTIONS=""
   #}}}
 #}}}
 #VIDEO {{{
@@ -384,7 +384,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #  8) Popcorn Time
     #  9) VLC
     # 10) Kodi
-    VIDEO_PLAYER_OPTIONS="8"
+    VIDEO_PLAYER_OPTIONS="9"
   #}}}
   #EDITORS|TOOLS {{{
     # 1) Arista
@@ -396,7 +396,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 7) Openshot
     # 8) Pitivi
     # 9) Transmageddon
-    VIDEO_EDITOR_OPTIONS="8"
+    VIDEO_EDITOR_OPTIONS="4 7"
   #}}}
 #}}}
 #GAMES {{{
@@ -411,14 +411,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 9) OSU!LAZER
   # 10) Wesnoth
   # 11) Xonotic
-  GAMES_OPTIONS=""
+  GAMES_OPTIONS="1 2 3 4"
 #}}}
 #WEBSERVER {{{
   # 1) LAMP - APACHE, MariaDB & PHP
   # 2) LAPP - APACHE, POSTGRESQL & PHP
   # 3) LEMP - NGINX, MariaDB & PHP
   # 4) LEPP - NGINX, POSTGRESQL & PHP
-  WEBSERVER="4"
+  WEBSERVER=""
   POSTGIS="n"
 #}}}
 #FONTS {{{
