@@ -283,6 +283,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     # 6) Vivaldi
     # 7) Tor-browser
     # 8) Brave
+    # 9) Microsoft Edge Beta
     BROWSERS_OPTIONS="3"
   #}}}
   #DOWNLOAD|FILESHARE {{{

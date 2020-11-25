@@ -2342,6 +2342,7 @@ install_internet_apps(){
             echo " 6) $(menu_item "vivaldi") $AUR"
             echo " 7) $(menu_item "tor browser") $AUR"
 	          echo " 8) $(menu_item "brave browser") $AUR"
+            echo " 9) $(menu_item "microsoft edge-beta") $AUR"
             echo ""
             echo " b) BACK"
             echo ""
@@ -2377,6 +2378,9 @@ install_internet_apps(){
                 8)
                   aur_package_install "brave-browser"
                   ;;
+                9)
+                  aur_package_install "microsoft-edge-beta-bin"
+                  ;;  
                 "b")
                   break
                   ;;
