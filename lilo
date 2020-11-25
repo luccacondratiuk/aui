@@ -1883,6 +1883,10 @@ install_development_apps(){
     echo "25) $(menu_item "postman-bin" "Postman") $AUR"
     echo "26) $(menu_item "gitkraken" "Gitkraken") $AUR"
     echo "27) $(menu_item "freecad" "FreeCad") $AUR"
+    echo "28) $(menu_item "dart" "Dart SDK")"
+    echo "29) $(menu_item "dart-sdk-dev" "Dart SDK-dev") $AUR"
+    echo "30) $(menu_item "flutter" "Flutter") $AUR"
+    echo "31) $(menu_item "flutter-dev" "Flutter-dev") $AUR"
     echo ""
     echo " b) BACK"
     echo ""
@@ -1982,7 +1986,39 @@ install_development_apps(){
           ;;
         27)
           aur_package_install "freecad"
+          ;;          
+        28)
+          package_install "dart"
+          add_line "export PATH=${PATH}:/opt/dart-sdk" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:/opt/dart-sdk/bin" "/home/${username}/.bashrc"
           ;;
+        29)
+          aur_package_install "dart-sdk-dev"
+          add_line "export PATH=${PATH}:/opt/dart-sdk-dev" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:/opt/dart-sdk-dev/bin" "/home/${username}/.bashrc"
+          ;;
+        30)
+          aur_package_install "flutter-group-pacman-hook"
+          aur_package_install "flutter"
+          add_line "export ANDROID_HOME=/opt/android-sdk" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:${ANDROID_HOME}/emulator" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:${ANDROID_HOME}/tools" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:${ANDROID_HOME}/tools/bin" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:${ANDROID_HOME}/platform-tools" "/home/${username}/.bashrc"
+          add_line "export FLUTTER_HOME=/opt/flutter" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:${FLUTTER_HOME}/bin" "/home/${username}/.bashrc"
+          ;;
+        31)
+          aur_package_install "flutter-group-pacman-hook"
+          aur_package_install "flutter-dev"
+          add_line "export ANDROID_HOME=/opt/android-sdk" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:${ANDROID_HOME}/emulator" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:${ANDROID_HOME}/tools" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:${ANDROID_HOME}/tools/bin" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:${ANDROID_HOME}/platform-tools" "/home/${username}/.bashrc"
+          add_line "export FLUTTER_HOME=/opt/flutter" "/home/${username}/.bashrc"
+          add_line "export PATH=${PATH}:${FLUTTER_HOME}/bin" "/home/${username}/.bashrc"
+          ;;      
         "b")
           break
           ;;

@@ -209,6 +209,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   # 25) Postman
   # 26) Gitkraken
   # 27) FreeCad
+  # 28) Dart-SDK
+  # 29) Dart-SDK-dev
+  # 30) Flutter
+  # 31) Flutter-dev
   DEVELOPMENT_OPTIONS="18"
 #}}}
 #OFFICE {{{
