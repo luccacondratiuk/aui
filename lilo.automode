@@ -400,11 +400,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #}}}
 #}}}
 #GAMES {{{
-  # 1) Desura
+  # 1) 0AD
   # 2) PlayOnLinux
   # 3) Steam
-  # 4) Minecraft
-  # 5) OSU!LAZER
+  # 4) Lutris
+  # 5) Mindustry
+  # 6) Minecraft
+  # 7) Minetest
+  # 8) Openra
+  # 9) OSU!LAZER
+  # 10) Wesnoth
+  # 11) Xonotic
   GAMES_OPTIONS=""
 #}}}
 #WEBSERVER {{{
